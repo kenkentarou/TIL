@@ -1,0 +1,31 @@
+## デフォルト値付きの引数
+def greeting(country = 'japan')
+  if country == japan
+    'おはよう'
+  else
+    'good morning'
+end
+
+greeting　#=> "おはよう"
+
+greeting('us') #=> "good morning"
+
+デフォルト値付き引数は省略するかそのまま引数を入れるかのどちらか
+
+
+
+## キーワード引数
+
+ef greeting(country: 'japan')
+  if country == 'japan'
+    'おはよう'
+  else
+    'good morining'
+  end
+end
+
+greeting #=> "おはよう"
+
+greeting(country: 'america') #=> "good morning"
+
+キーワード引数は省略するかキーワードとセットで入れるかのどちらか
