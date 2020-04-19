@@ -12,11 +12,9 @@ greeting('us') #=> "good morning"
 
 デフォルト値付き引数は省略するかそのまま引数を入れるかのどちらか
 
-
-
 ## キーワード引数
 
-ef greeting(country: 'japan')
+def greeting(country: 'japan')
   if country == 'japan'
     'おはよう'
   else
@@ -29,3 +27,17 @@ greeting #=> "おはよう"
 greeting(country: 'america') #=> "good morning"
 
 キーワード引数は省略するかキーワードとセットで入れるかのどちらか
+
+キーワード引数はデフォルト値を省略することも可能
+
+要は呼び出し時に引数の役割をわかりやすくするため
+
+def greeting(country: )
+  if country == 'japan'
+    'おはよう'
+  else
+    'good morining'
+  end
+end
+
+greeting(country: japan) #=> "おはよう"
