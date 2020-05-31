@@ -42,3 +42,16 @@ def greeting(country: )
 end
 
 greeting(country: japan) #=> "おはよう"
+
+## ハッシュを使った擬似キーワード引数
+
+def buy_burger(options = {})
+  drink = options[:drink]
+  potato = options[:potato]
+end
+
+buy_burger(drink: true, potato: true)
+
+# キーワード引数を違いキーはなんでも良い（無効なキーを弾きたい場合は別途メソッド内で実装が必要）
+
+greeting(country: 'america') #=> "good morning"
