@@ -4,6 +4,7 @@ def greeting(country = 'japan')
     'おはよう'
   else
     'good morning'
+  end
 end
 
 greeting　#=> "おはよう"
