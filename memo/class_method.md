@@ -6,9 +6,11 @@
 monthly_sale.rb
 
 class << self
+
   def less_than_minimum_relic_share?
    first.site.minimum_relic_share > all.sum(&:relic_share)
   end
+  
 end 
  
  siteが複数のmonthly_saleを持つ関連付けになっているとすると、
