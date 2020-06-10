@@ -16,9 +16,9 @@ end
  
  siteが複数のmonthly_saleを持つ関連付けになっているとすると、
  
- @monthluy_sales.less_than_minimum_relic_shareとかで使える。
- メソッドの中では、レシーバーとしてのmonthly_salesをallとかmapとかで受けることができる
- また、first.siteの部分は、レシーバーの@monthly_salesに対しての、
+ @monthly_sales.less_than_minimum_relic_shareとかでメソッドを使える。
+ メソッドの中では、レシーバーとしてのmonthly_salesをallとかmapとかで受けたり、first.siteの部分は、レシーバーの@monthly_salesに対しての、
  firstで一番目のオブジェクトを取って来て、それに対して、siteで関連するsiteのオブジェクトを取って来ている。
  関連付けになっているモデルのデータもこれで取ってこれる。（この場合は何を取って来ても全て紐づいているsiteは同じなので、このやり方でもできるが、
  紐づいているものがそれぞれ違う場合にはこのやり方だと不十分なケースもある。）
+ 複数のオブジェクト（配列）に対して実行するメソッドを使うと、柔軟に対応できるという話。
