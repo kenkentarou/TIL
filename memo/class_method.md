@@ -7,13 +7,9 @@
 monthly_sale.rb
 
 class << self
-
   def less_than_minimum_relic_share?
-   
    first.site.minimum_relic_share > all.sum(&:relic_share)
-  
   end
-  
 end 
 
 ```
