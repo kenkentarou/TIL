@@ -3,6 +3,7 @@
 クラスメソッドにすると、レシーバに複数のオブジェクトの集合を使うことができる。
 
 例：
+```
 monthly_sale.rb
 
 class << self
@@ -14,6 +15,8 @@ class << self
   end
   
 end 
+
+```
  
  siteが複数のmonthly_saleを持つ関連付けになっているとすると、
  
